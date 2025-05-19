@@ -24,6 +24,13 @@ body{
 .top-links a:first-child {
     margin-left: 0; /* pas de marge à gauche du premier lien */
 }
+.top-bar .top-links a{
+    color: white;
+    margin-left: 70px;
+    text-decoration: none;
+    
+    
+}
 
 .header .logo h1{
     margin-left: 40px;
@@ -32,13 +39,7 @@ body{
     margin-left: 40px;
 }
 
-.top-bar .top-links a{
-    color: white;
-    margin-left: 70px;
-    text-decoration: none;
-    
-    
-}
+
 
 .header{
     display: flex;
@@ -353,109 +354,482 @@ body{
         overflow: hidden;
     }
     
-    .service-box::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 220px;
-        background-size: cover;
-        background-position: center;
-        z-index: 1;
-        animation: slideshow 20s infinite;
-    }
     
-    /* Cache l’image d’origine sans la supprimer */
-    .service-box img {
-        opacity: 0;
-        position: relative;
-        z-index: 0;
-    }
-    
-    @keyframes slideshow {
-        0% { background-image: url('doc (2).jpg'); }
-       
-        50% { background-image: url('euipe.jpg'); }
-       
-        100% { background-image: url('doc.jpg'); }
-    }
-    
-
-
-    .service-box1 {
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .service-box1::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 220px;
-        background-size: cover;
-        background-position: center;
-        z-index: 1;
-        animation: slideshow-box1 20s infinite;
-    }
-    
-    .service-box1 img {
-        opacity: 0;
-        position: relative;
-        z-index: 0;
-    }
-    
-    /* --- ANIMATION POUR .service-box2 --- */
-    .service-box2 {
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .service-box2::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 220px;
-        background-size: cover;
-        background-position: center;
-        z-index: 1;
-        animation: slideshow-box2 20s infinite;
-    }
-    
-    .service-box2 img {
-        opacity: 0;
-        position: relative;
-        z-index: 0;
-    }
-    
-    /* --- ANIMATIONS DÉFINIES --- */
-   
-    @keyframes slideshow-box1 {
-        0%   { background-image: url('cdc-vt7iAyiwpf0-unsplash.jpg'); }
-       
-        50%  { background-image: url('national-cancer-institute-dkZQfm1LLQE-unsplash.jpg'); }
-        
-        100% { background-image: url('gabriel-tovar-_da74khfvBM-unsplash.jpg'); }
-    }
-    
-    @keyframes slideshow-box2 {
-        0%   { background-image: url('doc (4).jpg'); }
-       
-        50%  { background-image: url('doc\ \(2\).jpg'); }
-       
-        100% { background-image: url('national-cancer-institute-SMxzEaidR20-unsplash.jpg'); }
-    }
-    
-
 
     
 
 
 
-    https://divine-onni.github.io/Hopit/
+    /* SECTION CONTACT */
+#contact {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
 
+#contact h2 {
+    color: #007b83;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* LIENS & LISTES SOCIAUX */
+#contact ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+#contact li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+#contact i {
+    color: #007b83;
+    margin-right: 8px;
+}
+
+#contact {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+#contact h2 {
+    color: #007b83;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+
+
+
+/* DIV globale contenant le texte + formulaire */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
     
+}
+
+/* COLONNE GAUCHE - INFOS */
+.contact-infos {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-infos ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.contact-infos li {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.contact-infos i {
+    color: #007b83;
+    margin-right: 8px;
+}
+
+/* COLONNE DROITE - FORMULAIRE */
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.contact-form label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007b83;
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #007b83;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.contact-form button:hover {
+    background-color: #005e66;
+}
+
+.contact-form button[type="reset"] {
+    background-color: #ccc;
+    color: #333;
+}
+
+.contact-form button[type="reset"]:hover {
+    background-color: #999;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+/* GALERIE DE CARTES DANS LA SECTION DÉPARTEMENT */
+.contact-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* STYLE DES CARTES */
+.contact-gallery .card {
+    width: 200px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.4s ease;
+}
+
+.contact-gallery .card:hover {
+    transform: translateY(-15px);
+}
+
+.contact-gallery .card p {
+    margin: 15px 10px 10px;
+    font-weight: 600;
+    color: #007b83;
+    font-size: 15px;
+}
+
+.contact-gallery .card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+    border-top: 1px solid #eee;
+}
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .contact-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-gallery .card {
+        width: 90%;
+    }
+}
+
+/* CONTAINER POUR SECTION DEPARTEMENT */
+.departement-container {
+    max-width: 8000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  
+    border-radius: 10px;
+    
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+}
+
+.departement-container h2 {
+    color: #007b83;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.departement-container p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.departement-container ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.departement-container li {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+/* CONTAINER PRINCIPAL FAQ */
+.faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* TEXTE */
+.faq-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.faq-text h2 {
+    color: #007b83;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.faq-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.faq-text ul {
+    padding-left: 20px;
+}
+
+.faq-text li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #444;
+}
+
+/* IMAGE */
+.faq-image {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .faq-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .faq-image {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+
+/* CONTAINER PRINCIPAL SERVICES */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: fff;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* TEXTE */
+.services-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.services-text h2 {
+    font-size: 26px;
+    color: #007b83;
+    margin-bottom: 20px;
+}
+
+.services-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+/* IMAGE */
+.services-image {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-image img {
+    max-width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services-image {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+/* Footer global */
+.foot {
+    background-color:#005e66; /* couleur de fond foncée */
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.foot footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Conteneur central aligné */
+.foot-cent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permet l'adaptation sur petits écrans */
+    gap: 20px;
+}
+
+/* Chaque bloc de contenu (réseaux, nav1, nav2) */
+.foot-cent > div {
+    flex: 1 1 30%; /* Chaque bloc prend au moins 30% et s'adapte */
+    min-width: 250px;
+    box-sizing: border-box;
+}
+
+/* Icônes et texte */
+.icon ul,
+.nv ul,
+.nv1 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.icon li,
+.nv li,
+.nv1 li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.icon i {
+    margin-right: 10px;
+}
+
+/* Liens */
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #1abc9c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .foot-cent {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .foot-cent > div {
+        flex: 1 1 100%;
+    }
+}
