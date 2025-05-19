@@ -32,6 +32,34 @@ body{
     
 }
 
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 15px;
+        gap: 10px;
+    }
+
+    .top-bar p {
+        margin-right: 0;
+    }
+
+    .top-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .top-links a {
+        margin-left: 0 !important; /* annule les marges larges sur mobile */
+    }
+}
+
+
+
+
+
+
 .header .logo h1{
     margin-left: 40px;
 }
